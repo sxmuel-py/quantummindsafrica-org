@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --bg-primary: #080B16;
-    --bg-secondary: #0D1326;
-    --text-primary: #F8FAFC;
-    --text-muted: #94A3B8;
-    --border-color: rgba(255, 255, 255, 0.1);
-    --glass-bg: rgba(13, 19, 38, 0.7);
-    --accent-cyan: #06B6D4;
-    --accent-gold: #F59E0B;
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
+    --text-primary: #0F172A;
+    --text-muted: #475569;
+    --border-color: rgba(15, 23, 42, 0.12);
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --accent-cyan: #0284C7;
+    --accent-gold: #D97706;
   }
 
   .light-theme {
