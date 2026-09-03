@@ -36,7 +36,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               src="/images/logo.png"
               alt="Quantum Minds Africa Logo"
               fill
-              className="object-cover"
+              className="object-contain p-0.5"
               priority
             />
           </div>

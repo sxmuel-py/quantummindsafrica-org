@@ -20,7 +20,7 @@ export default function Footer() {
                   src="/images/logo.png"
                   alt="QMA Emblem Logo"
                   fill
-                  className="object-cover"
+                  className="object-contain p-0.5"
                 />
               </div>
               <span className="font-display font-bold text-lg text-white">
