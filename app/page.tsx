@@ -6,6 +6,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import DonationModal from "@/components/DonationModal";
 import GalleryModal from "@/components/GalleryModal";
+import DemoBadge from "@/components/DemoBadge";
 import {
   Heart,
   BookOpen,
@@ -121,15 +122,16 @@ export default function Home() {
       {/* Top Navbar */}
       <Navbar onOpenDonation={() => setIsDonationOpen(true)} />
 
-      {/* Modals */}
+      {/* Modals & Demo Badge */}
       <DonationModal isOpen={isDonationOpen} onClose={() => setIsDonationOpen(false)} />
       <GalleryModal item={selectedGalleryItem} onClose={() => setSelectedGalleryItem(null)} />
+      <DemoBadge />
 
       {/* ========================================================================= */}
       {/* 1. HERO SECTION */}
       {/* ========================================================================= */}
-      <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-200 shadow-2xl min-h-[580px] lg:min-h-[640px] flex items-center">
+      <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
+        <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-200 shadow-2xl min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center">
           
           {/* Background Image Container */}
           <div className="absolute inset-0 z-0">
@@ -141,34 +143,34 @@ export default function Home() {
               priority
             />
             {/* Soft Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/30" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-950/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
           </div>
 
           {/* Hero Content */}
-          <div className="relative z-10 p-6 sm:p-12 lg:p-16 max-w-2xl text-white space-y-6">
+          <div className="relative z-10 p-5 sm:p-12 lg:p-16 max-w-2xl text-white space-y-4 sm:space-y-6">
             
             <div className="inline-flex items-center space-x-2 bg-amber-500/20 border border-amber-500/40 text-amber-300 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-              <Atom className="w-4 h-4 text-amber-400" />
-              <span>Making Physics & Science Simple for Every Child</span>
+              <Atom className="w-4 h-4 text-amber-400 shrink-0" />
+              <span className="truncate">Making Physics & Science Simple</span>
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
               Making Science Simple <br />
               <span className="text-amber-400">For Nigerian Students</span>
             </h1>
 
             {/* Paragraph */}
-            <p className="text-sm sm:text-base text-slate-200 leading-relaxed max-w-xl">
+            <p className="text-xs sm:text-base text-slate-200 leading-relaxed max-w-xl">
               Quantum Minds Africa Initiative (QMAI) bridges the STEM education gap through interactive school outreach, hands-on physics experiments, and simplified study materials for public school students across Nigeria.
             </p>
 
             {/* Pill CTA Button */}
-            <div className="pt-2 flex flex-wrap gap-4 items-center">
+            <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center">
               <button
                 onClick={() => setIsDonationOpen(true)}
-                className="carenest-btn-primary text-sm shadow-xl hover:scale-105"
+                className="carenest-btn-primary text-xs sm:text-sm shadow-xl hover:scale-[1.02] justify-center py-3.5 active:scale-95 transition-transform"
               >
                 <span>Donate Now</span>
                 <span className="carenest-btn-icon">
@@ -178,7 +180,7 @@ export default function Home() {
 
               <a
                 href="#founder"
-                className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-full text-xs transition-all border border-white/20"
+                className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3.5 rounded-full text-xs transition-all border border-white/20 text-center active:bg-white/30"
               >
                 Meet Our Founder
               </a>

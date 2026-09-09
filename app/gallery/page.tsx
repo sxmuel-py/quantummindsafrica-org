@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import DonationModal from "@/components/DonationModal";
 import GalleryModal from "@/components/GalleryModal";
+import DemoBadge from "@/components/DemoBadge";
 import {
   Camera,
   ArrowLeft,
@@ -126,9 +127,10 @@ export default function DedicatedGalleryPage() {
       {/* Navbar */}
       <Navbar onOpenDonation={() => setIsDonationOpen(true)} />
 
-      {/* Modals */}
+      {/* Modals & Demo Badge */}
       <DonationModal isOpen={isDonationOpen} onClose={() => setIsDonationOpen(false)} />
       <GalleryModal item={selectedGalleryItem} onClose={() => setSelectedGalleryItem(null)} />
+      <DemoBadge />
 
       {/* Header Banner */}
       <section className="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
