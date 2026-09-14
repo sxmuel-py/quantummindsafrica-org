@@ -16,28 +16,27 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://quantummindsafrica.org"),
-  title: "Quantum Minds Africa | Empowering Africa's Next-Gen Scientists & Innovators",
+  title: "Quantum Minds Africa (QMA) NGO — Official Launching Soon",
   description:
-    "Empowering African youth, researchers, and visionaries through Quantum Science, STEM Labs, AI Literacy, and Community Tech Fellowships.",
+    "Official coming soon portal for Quantum Minds Africa (quantummindsafrica.org). Empowering youth, researchers, and innovators across Africa with quantum science & AI literacy.",
   keywords: [
     "Quantum Minds Africa",
     "quantummindsafrica.org",
     "African Quantum Computing",
-    "STEM Africa NGO",
     "AI Education Africa",
-    "Pan-African Innovation",
-    "Youth Science Fellowship",
+    "Pan-African NGO",
+    "STEM Youth Empowerment",
   ],
   authors: [{ name: "Quantum Minds Africa NGO" }],
   openGraph: {
-    title: "Quantum Minds Africa NGO — Innovation & STEM Platform",
+    title: "Quantum Minds Africa (QMA) NGO — Under Construction",
     description:
       "Unlocking Africa's Technological Potential Through Quantum Innovation & Frontier Science.",
     url: "https://quantummindsafrica.org",
     siteName: "Quantum Minds Africa NGO",
     images: [
       {
-        url: "/images/hero-bg.jpg",
+        url: "/images/hero.png",
         width: 1200,
         height: 675,
         alt: "Quantum Minds Africa NGO Innovation Hub",
@@ -48,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quantum Minds Africa NGO",
-    description: "Building Africa's Quantum & STEM Future.",
-    images: ["/images/hero-bg.jpg"],
+    title: "Quantum Minds Africa NGO — Launching Q4 2026",
+    description: "Building Africa's Quantum & AI Future.",
+    images: ["/images/hero.png"],
   },
 };
 

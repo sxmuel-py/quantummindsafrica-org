@@ -15,20 +15,25 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="md:col-span-5">
             <div className="flex items-center space-x-3 mb-3">
-              <Image
-                src="/images/logo.png"
-                alt="Quantum Minds Africa Logo"
-                width={180}
-                height={52}
-                className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
-              />
+              <div className="relative w-9 h-9 rounded-lg overflow-hidden ring-1 ring-cyan-500/50">
+                <Image
+                  src="/images/logo.png"
+                  alt="QMA Emblem Logo"
+                  fill
+                  className="object-contain p-0.5"
+                />
+              </div>
+              <span className="font-display font-bold text-lg text-white">
+                Quantum Minds Africa
+              </span>
             </div>
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed mb-4">
-              Quantum Minds Africa Initiative (QMAI) is a Non-Governmental Educational NGO dedicated to making physics, STEM, and quantum science simple, engaging, and accessible for public school students across Nigeria.
+              A Pan-African Non-Governmental Organization dedicated to advancing quantum computing, 
+              frontier AI literacy, and youth innovation hubs across Africa.
             </p>
-            <div className="flex items-center space-x-2 text-xs text-amber-400 font-mono">
+            <div className="flex items-center space-x-2 text-xs text-cyan-400 font-mono">
               <Globe className="w-3.5 h-3.5" />
-              <span>Official Platform: quantummindsafrica.org</span>
+              <span>Official Domain: quantummindsafrica.org</span>
             </div>
           </div>
 
