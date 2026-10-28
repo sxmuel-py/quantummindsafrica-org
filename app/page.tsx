@@ -6,7 +6,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import DonationModal from "@/components/DonationModal";
 import GalleryModal from "@/components/GalleryModal";
-import DemoBadge from "@/components/DemoBadge";
 import {
   Heart,
   BookOpen,
@@ -122,10 +121,9 @@ export default function Home() {
       {/* Top Navbar */}
       <Navbar onOpenDonation={() => setIsDonationOpen(true)} />
 
-      {/* Modals & Demo Badge */}
+      {/* Modals */}
       <DonationModal isOpen={isDonationOpen} onClose={() => setIsDonationOpen(false)} />
       <GalleryModal item={selectedGalleryItem} onClose={() => setSelectedGalleryItem(null)} />
-      <DemoBadge />
 
       {/* ========================================================================= */}
       {/* 1. HERO SECTION */}
