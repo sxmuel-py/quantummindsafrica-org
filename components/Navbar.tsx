@@ -26,18 +26,6 @@ export default function Navbar({ onOpenDonation }: NavbarProps) {
   return (
     <header className="w-full bg-white border-b border-slate-200 sticky top-0 z-50 transition-all">
       
-      {/* Top Demo Notice Banner */}
-      <div className="bg-amber-500/10 border-b border-amber-500/20 text-amber-950 text-xs py-1.5 px-4 text-center font-medium flex items-center justify-center space-x-2">
-        <span className="relative flex h-2 w-2 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-        </span>
-        <span className="text-[11px] sm:text-xs">
-          <strong className="text-amber-900 font-extrabold uppercase tracking-wider text-[10px] sm:text-[11px] mr-1">Live Demo Preview:</strong>
-          This platform is currently an interactive demonstration preview for Quantum Minds Africa Initiative.
-        </span>
-      </div>
-
       {/* Top Contact Bar */}
       <div className="bg-slate-50 border-b border-slate-200 text-xs text-slate-600 py-2 px-4 sm:px-8 hidden md:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
