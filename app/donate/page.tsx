@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import DonationModal from "@/components/DonationModal";
-import DemoBadge from "@/components/DemoBadge";
 import Footer from "@/components/Footer";
 import {
   Heart,
@@ -176,12 +175,11 @@ Currency: Nigerian Naira (NGN)`;
       {/* Official Top Navbar */}
       <Navbar onOpenDonation={() => setIsDonationModalOpen(true)} />
 
-      {/* Floating Demo Badge & Donation Modal */}
+      {/* Donation Modal */}
       <DonationModal
         isOpen={isDonationModalOpen}
         onClose={() => setIsDonationModalOpen(false)}
       />
-      <DemoBadge />
 
       {/* Main Content Area */}
       <div className="flex-grow">
