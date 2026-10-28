@@ -4,8 +4,6 @@ Official website for **Quantum Minds Africa Initiative** — an educational NGO 
 
 **Live site:** [https://quantummindsafrica-org.vercel.app](https://quantummindsafrica-org.vercel.app)
 
-> **Note:** This platform is currently an interactive demonstration preview.
-
 ## About
 
 Founded by **Debola Oyelami** (top IGCSE Physics & Chemistry scholar in Africa), QMAI focuses on:
